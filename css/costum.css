@@ -1,0 +1,507 @@
+.costum-btn {
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+li a i {
+  color: white;
+}
+
+.navbar-brand {
+  font-family: viga;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+body {
+  height: 1000px;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .contact-nav {
+    background: linear-gradient(to right, brown, black);
+    height: 40px;
+    width: 100%;
+  }
+  nav {
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s all;
+    height: 70px;
+    margin-top: 35px;
+  }
+  nav .btn-burger {
+    display: none;
+  }
+  nav ul {
+    position: absolute;
+    top: 18px;
+    right: 100px;
+    display: flex;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  nav ul li {
+    margin: 5px 15px;
+    font-size: 19px;
+  }
+  nav ul li .link {
+    transition: 0.3s all;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding-bottom: 25px;
+  }
+  nav ul li :hover {
+    color: #a52a2a;
+  }
+  nav ul li i {
+    transition: 0.5s;
+  }
+  nav ul li :hover i {
+    color: brown;
+  }
+  nav .menu-dropdown {
+    position: relative;
+  }
+  nav .menu-dropdown div {
+    display: none;
+    padding: 10px 60px 10px 15px;
+    background-color: white;
+    transition: left 0.5s;
+    /* https://bennettfeely.com/clippy/  */
+    /* mengubah bentuk dengan */
+    clip-path: polygon(0 100%, 100% 100%, 100% 15%, 34% 15%, 23% 0, 17% 15%, 0 15%);
+    transition: left 0.5s;
+  }
+  nav .menu-dropdown div a {
+    color: black;
+  }
+  nav .menu-dropdown div a:hover {
+    color: brown;
+  }
+  nav .menu-dropdown:hover div {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 0px;
+    top: 30px;
+  }
+  .nav-animated {
+    background-color: #333232;
+    height: 50px;
+    margin-top: 0;
+  }
+  .nav-animated li {
+    margin-top: -3px;
+    font-size: 15px;
+  }
+  .nav-animated li:hover .link {
+    color: brown;
+  }
+  .nav-animated li:hover i {
+    color: #a52a2a;
+  }
+  .nav-animated li a {
+    color: white;
+  }
+  .nav-animated li a i {
+    color: white;
+  }
+  .nav-animated .btn-burger {
+    display: none;
+  }
+  .nav-animated .costum-btn {
+    margin-top: -8px;
+    font-size: 12px;
+    transition: 0.5s;
+  }
+  .navbar-brand {
+    margin-top: -5px;
+  }
+  .carousel img {
+    height: 650px;
+  }
+  .carousel-caption {
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+  }
+  .carousel-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.274);
+    top: 0;
+    height: 750px;
+    width: 100%;
+  }
+  .portfolio {
+    position: relative;
+    top: 30px;
+  }
+  .portfolio h1 {
+    position: relative;
+    font-size: 70px;
+    margin-bottom: 70px;
+  }
+  .portfolio h1::after {
+    content: '';
+    position: absolute;
+    right: 30px;
+    margin-top: 10px;
+    display: block;
+    height: 5px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  .portfolio .items {
+    margin-top: -70px;
+    position: absolute;
+    right: 100px;
+    top: 0px;
+    width: 60%;
+  }
+  .portfolio .items .item {
+    width: 260px;
+    height: 170px;
+  }
+  .portfolio .animasi-img {
+    margin-top: 70px;
+    position: absolute;
+  }
+  .footer {
+    margin-top: 300PX;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .contact-nav {
+    background: linear-gradient(to right, brown, black);
+    height: 40px;
+    width: 100%;
+  }
+  .contact-nav .sosmed-img {
+    position: absolute;
+    right: 490px;
+  }
+  nav {
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s all;
+    height: 70px;
+    margin-top: 35px;
+  }
+  nav .navbar-brand {
+    font-family: viga;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    margin-left: -50px;
+  }
+  nav .btn-burger {
+    display: none;
+  }
+  nav ul {
+    position: absolute;
+    top: 18px;
+    right: 50px;
+    display: flex;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  nav ul li {
+    margin: 5px 15px;
+    font-size: 15px;
+  }
+  nav ul li .link {
+    transition: 0.3s all;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding-bottom: 25px;
+  }
+  nav ul li :hover {
+    color: brown;
+  }
+  nav ul li i {
+    transition: 0.5s;
+  }
+  nav ul li :hover i {
+    color: brown;
+  }
+  nav .menu-dropdown {
+    position: relative;
+  }
+  nav .menu-dropdown div {
+    display: none;
+    padding: 10px 60px 10px 15px;
+    background-color: #eaeaea9a;
+    transition: left 0.5s;
+    /* https://bennettfeely.com/clippy/  */
+    /* mengubah bentuk dengan */
+    clip-path: polygon(0 100%, 100% 100%, 100% 15%, 34% 15%, 23% 0, 17% 15%, 0 15%);
+    transition: left 0.5s;
+  }
+  nav .menu-dropdown:hover div {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 0px;
+    top: 30px;
+  }
+  .nav-animated {
+    background-color: #333232;
+    height: 50px;
+    margin-top: 0;
+  }
+  .nav-animated li {
+    margin-top: -3px;
+    font-size: 15px;
+  }
+  .nav-animated li:hover .link {
+    color: brown;
+  }
+  .nav-animated li:hover i {
+    color: brown;
+  }
+  .nav-animated li a {
+    color: white;
+  }
+  .nav-animated li a i {
+    color: white;
+  }
+  .nav-animated .btn-burger {
+    display: none;
+  }
+  .nav-animated .costum-btn {
+    margin-top: -8px;
+    font-size: 12px;
+    transition: 0.5s;
+  }
+  .navbar-brand {
+    margin-top: -5px;
+  }
+  .carousel img {
+    height: 550px;
+  }
+  .carousel-caption {
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+  }
+  .carousel-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.274);
+    top: 0;
+    height: 750px;
+    width: 100%;
+  }
+  .regis-member .main {
+    display: flex;
+    justify-content: space-around;
+  }
+  .regis-member .register {
+    margin-left: 120px;
+  }
+  .portfolio {
+    position: relative;
+  }
+  .portfolio h1 {
+    font-size: 60px;
+    margin-left: -450px;
+    margin-bottom: 70px;
+  }
+  .portfolio h1::after {
+    content: '';
+    position: absolute;
+    left: 85px;
+    margin-top: 10px;
+    display: block;
+    height: 3px;
+    width: 220px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  .portfolio .items {
+    margin-top: 0px;
+    position: absolute;
+    top: 150px;
+    right: 80px;
+    width: 85%;
+  }
+  .portfolio .items .item {
+    width: 250px;
+    height: 170px;
+  }
+  .portfolio .animasi-img img {
+    position: absolute;
+    right: 70px;
+    top: -50px;
+    width: 350px;
+    height: 200px;
+  }
+  .footer {
+    margin-top: 600px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contact-nav {
+    position: fixed;
+    z-index: 2;
+    text-align: center;
+    background-color: brown;
+    height: 35px;
+    width: 100%;
+    top: 0;
+  }
+  .contact-nav .phone {
+    position: absolute;
+    top: -3px;
+  }
+  .contact-nav .sosmed-img {
+    position: absolute;
+    left: 30px;
+    top: -2px;
+  }
+  .navbar {
+    background-color: #333232;
+    margin-top: 35px;
+    height: 60px;
+  }
+  .navbar .navbar-brand {
+    margin: auto;
+  }
+  .navbar .container {
+    display: flex;
+  }
+  .navbar ul {
+    position: absolute;
+    list-style: none;
+    top: 60px;
+    left: 0;
+    width: 50%;
+    background-color: rgba(12, 12, 12, 0.651);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-300px);
+    transition: 0.5s all;
+  }
+  .navbar ul .link {
+    text-decoration: none;
+    color: white;
+    padding-left: 60px;
+    transition: 0.5s;
+  }
+  .navbar ul .active {
+    margin-top: 90px;
+  }
+  .navbar ul .last-menu {
+    margin-bottom: 70px;
+  }
+  .navbar ul li {
+    padding: 20px 30px;
+    margin-left: -60px;
+    margin-right: -0px;
+  }
+  .navbar ul li:hover {
+    background-color: yellowgreen;
+  }
+  .navbar ul li:hover .link {
+    margin-left: -15px;
+  }
+  .navbar ul .costum-btn {
+    margin-left: 20px;
+  }
+  .navbar ul .login {
+    position: absolute;
+    margin-top: 30px;
+    right: 80px;
+  }
+  .navbar .view {
+    transform: translateX(0);
+  }
+  .navbar .btn-burger {
+    display: flex;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+  }
+  .navbar .dropdown {
+    position: relative;
+  }
+  .navbar .menu-dropdown div {
+    display: none;
+    padding: 30px 60px 10px 15px;
+    background-color: #eaeaea9a;
+    transition: left 0.5s;
+    /* https://bennettfeely.com/clippy/  */
+    /* mengubah bentuk dengan */
+    clip-path: polygon(0 100%, 100% 100%, 100% 15%, 34% 15%, 23% 0, 17% 15%, 0 15%);
+    transition: left 0.5s;
+  }
+  .navbar .menu-dropdown:hover div {
+    display: flex;
+    flex-direction: column;
+    left: 120px;
+    top: 43px;
+  }
+  .carousel img {
+    height: 400px;
+    margin-top: 80px;
+  }
+  .carousel-caption {
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+  }
+  .carousel-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.274);
+    top: 0;
+    height: 750px;
+    width: 100%;
+  }
+  .regis-member .main {
+    display: flex;
+    justify-content: space-around;
+  }
+  .regis-member .register {
+    margin-left: 0px;
+  }
+  .portfolio {
+    position: relative;
+  }
+  .portfolio h1 {
+    font-size: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .portfolio .items {
+    margin-top: 0px;
+    position: absolute;
+    top: 150px;
+    right: 80px;
+    width: 85%;
+  }
+  .portfolio .items .item {
+    width: 300px;
+    height: 150px;
+  }
+  .portfolio .animasi-img img {
+    position: absolute;
+    right: 70px;
+    top: -50px;
+    width: 350px;
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=costum.css.map */

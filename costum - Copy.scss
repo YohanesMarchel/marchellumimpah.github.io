@@ -1,0 +1,659 @@
+
+// ==============================UTIILITIS======================//
+.costum-btn {
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+li a i {
+  color: white;
+}
+
+.navbar-brand{
+  font-family: viga;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
+
+.portfolio{
+  margin-top: 250px;
+}
+
+.clip{
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:gainsboro;
+  clip-path:circle(500px at right 500px);
+  z-index: -1;
+}
+.clip-left{
+  position: absolute;
+  top: -300px;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background-color:rgba(220, 220, 220, 0.623);
+  clip-path:circle(800px at left 960px);
+  z-index: -1;
+}
+
+// =========================NAVBAR FIXED=============================//
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+}
+
+
+// ==========================================// RESPONSIVE //==================================//
+
+//============================================ON DESKTOP====================================//
+@media (min-width: 992px) {
+  // ========================================CONTACT NAVBAR=================================//
+  .contact-nav{
+    background:linear-gradient(to right,brown,black);
+    height: 40px;
+    width: 100%;
+  }
+  // =========================================NAVBAR========================================//
+  nav {
+    background-color:rgba(0, 0, 0, 0);
+    transition: 0.5s all;
+    height: 70px;
+    margin-top: 35px;
+
+    .btn-burger{
+      display: none;
+    }
+    ul {
+      position: absolute;
+      top: 18px;
+      right: 100px;
+      display: flex;
+      list-style: none;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      
+      // li:hover .link {
+      // color:white;
+      // }
+  
+      // li .link:hover::after{
+      //   content: '';
+      //   display: block;
+      //   height: 4px;
+      //   background-color: brown;
+      //   width: 50%;
+      //   margin: auto;
+      //   margin-top: 7px;
+      //   border-radius: 100px;
+      // }
+    }
+    
+    ul li {
+      margin: 5px 15px;
+      font-size: 19px;
+      .link {
+        transition: 0.3s all;
+        text-decoration: none;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+        padding-bottom: 25px;
+      }
+      :hover{
+        color: #a52a2a;
+      }
+      i{
+        transition: 0.5s;
+      }
+      :hover i {
+        color: brown;
+      }
+    }
+    
+    //==========================MENU DROPDOW==================================//
+    .menu-dropdown {
+      position: relative;
+    }
+    
+    //================================= MENU DROPDOWN===========================//
+    .menu-dropdown div {
+      // visibility: hidden;
+      display: none;
+      padding: 10px 60px 10px 15px;
+      background-color: white;
+      transition: left 0.5s;
+      /* https://bennettfeely.com/clippy/  */
+      /* mengubah bentuk dengan */
+      clip-path: polygon(
+        0 100%,
+        100% 100%,
+        100% 15%,
+        34% 15%,
+        23% 0,
+        17% 15%,
+        0 15%
+        );
+        transition: left 0.5s;
+      }
+
+      .menu-dropdown div a{
+        color: black;
+      }
+      .menu-dropdown div a:hover{
+        color: brown;
+      }
+      
+      .menu-dropdown:hover div {
+        // visibility: visible;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        left: 0px;
+        top: 30px;
+      } 
+    }
+    //=====================ON ANIMATED NAVBAR SCROLL=========================//
+    .nav-animated {
+      background-color: rgb(51, 50, 50);
+      height: 50px;
+      margin-top: 0;
+    }
+    .nav-animated li {
+      margin-top: -3px;
+      font-size: 15px;
+    }
+    .nav-animated li:hover .link{
+      color: brown;
+    }
+    .nav-animated li:hover i{
+      color:#a52a2a ;
+    }
+    .nav-animated li a{
+      color: white;
+    }
+    .nav-animated li a i{
+      color: white;
+    }
+    .nav-animated .btn-burger {
+      display: none;
+    }
+    .nav-animated .costum-btn {
+      margin-top: -8px;
+      font-size: 12px;
+      transition: 0.5s;
+    }
+    .navbar-brand{
+      margin-top: -5px;
+    }
+
+    // ============================================JUMBOTRON/BANER======================================//
+    // ============================================SLIDER BANER==========================================//
+    .carousel img{
+      height:650px;
+    }
+
+    .carousel-caption{
+      position: absolute;
+      z-index: 1;
+      top: 150px;
+    }
+
+    .carousel-item::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-color:rgba(0, 0, 0, 0.274);
+      top: 0;
+      height: 750px;
+      width: 100%;
+    }
+
+    //====================================FITURES===================================//
+    .fitures{
+      .item2{
+        position: relative;
+        left: 150px;
+      }
+      .item3{ 
+        position: relative;
+        left:300px;
+      }
+
+      .fitures-main-img{
+        position: absolute;
+        right: 30px;
+        top: -100px;
+        border-radius: 80px 0 80px 0;
+      }
+    }
+    
+    // ================================= FOOTER =====================//
+    .footer{
+      margin-top: 300PX;
+    }
+  }
+
+
+
+
+
+
+
+  // ============ON TABLET======================//
+  @media (max-width: 991.98px) {
+    // ========================================CONTACT NAVBAR=================================//
+  .contact-nav{
+    background:linear-gradient(to right,brown,black);
+    height: 40px;
+    width: 100%;
+
+    .sosmed-img {
+      position: absolute;
+      right: 490px;
+    }
+  }
+  // =========================================NAVBAR========================================//
+  nav {
+    background-color:rgba(0, 0, 0, 0);
+    transition: 0.5s all;
+    height: 70px;
+    margin-top: 35px;
+
+    .navbar-brand{
+      font-family: viga;
+      font-size: 25px;
+      text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+      margin-left: -50px;
+    }
+
+    .btn-burger{
+      display: none;
+    }
+    ul {
+      position: absolute;
+      top: 18px;
+      right: 50px;
+      display: flex;
+      list-style: none;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      
+      // li:hover .link {
+      // color:white;
+      // }
+  
+      // li .link:hover::after{
+      //   content: '';
+      //   display: block;
+      //   height: 4px;
+      //   background-color: brown;
+      //   width: 50%;
+      //   margin: auto;
+      //   margin-top: 7px;
+      //   border-radius: 100px;
+      // }
+    }
+    
+    ul li {
+      margin: 5px 15px;
+      font-size: 15px;
+      .link {
+        transition: 0.3s all;
+        text-decoration: none;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+        padding-bottom: 25px;
+      }
+      :hover{
+        color: brown;
+      }
+      i{
+        transition: 0.5s;
+      }
+      :hover i {
+        color: brown;
+      }
+    }
+    
+    //==========================MENU DROPDOW==================================//
+    .menu-dropdown {
+      position: relative;
+    }
+    
+    //================================= MENU DROPDOWN===========================//
+    .menu-dropdown div {
+      // visibility: hidden;
+      display: none;
+      padding: 10px 60px 10px 15px;
+      background-color: #eaeaea9a;
+      transition: left 0.5s;
+      /* https://bennettfeely.com/clippy/  */
+      /* mengubah bentuk dengan */
+      clip-path: polygon(
+        0 100%,
+        100% 100%,
+        100% 15%,
+        34% 15%,
+        23% 0,
+        17% 15%,
+        0 15%
+        );
+        transition: left 0.5s;
+      }
+      
+      .menu-dropdown:hover div {
+        // visibility: visible;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        left: 0px;
+        top: 30px;
+      } 
+    }
+    //=====================ON ANIMATED NAVBAR SCROLL=========================//
+    .nav-animated {
+      background-color: rgb(51, 50, 50);
+      height: 50px;
+      margin-top: 0;
+    }
+    .nav-animated li {
+      margin-top: -3px;
+      font-size: 15px;
+    }
+    .nav-animated li:hover .link{
+      color: brown;
+    }
+    .nav-animated li:hover i{
+      color:brown ;
+    }
+    .nav-animated li a{
+      color: white;
+    }
+    .nav-animated li a i{
+      color: white;
+    }
+    .nav-animated .btn-burger {
+      display: none;
+    }
+    .nav-animated .costum-btn {
+      margin-top: -8px;
+      font-size: 12px;
+      transition: 0.5s;
+    }
+    .navbar-brand{
+      margin-top: -5px;
+    }
+
+    // ============================================JUMBOTRON/BANER======================================//
+    // ============================================SLIDER BANER==========================================//
+    .carousel img{
+      height:550px;
+    }
+
+    .carousel-caption{
+      position: absolute;
+      z-index: 1;
+      top: 200px;
+    }
+
+    .carousel-item::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-color:rgba(0, 0, 0, 0.274);
+      top: 0;
+      height: 750px;
+      width: 100%;
+    }
+
+  // ================================= MEMBER SECTION ======================================//
+    .regis-member{
+      .main{
+        display: flex;
+        justify-content: space-around;
+      }
+      .register{
+        margin-left: 120px;
+      }
+    }
+
+     //====================================FITURES===================================//
+    .fitures .items{
+      margin-left: 20px;
+    }
+
+    .fitures-main-img{
+      width: 250px;
+      height: 200px;
+      border-radius: 30%  0 30% 0;
+      top: -50px;
+      right: 40px;
+      position: relative;
+    }
+
+
+    // =========================== OR MENUS =========================//
+    .portfolio{
+      text-align: left;
+      .right{
+        order: 2;
+
+        h1,p{
+          text-align: left;
+        }
+
+        a{
+          position: absolute;
+          left: 115px;
+        }
+      }
+      .left{
+        order: 1;
+      }
+    }
+     
+    // =========================== FOOTER ===========================//
+    
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  //=============ON ANDROID=====================//
+  @media (max-width: 575.98px) {
+    // ========================================CONTACT NAVBAR=================================//
+  .contact-nav{
+    position: fixed;
+    z-index:2;
+    text-align: center;
+    background-color: brown;
+    height: 35px;
+    width: 100%;
+    top: 0;
+
+    .phone{
+      position: absolute;
+      top: -3px;
+    }
+  
+    .sosmed-img {
+      position: absolute;
+      left: 30px;
+      top: -2px;
+    }
+  }
+  
+    //=========mrnu burger=============//
+  .navbar {
+    background-color: rgb(51, 50, 50);
+    margin-top: 35px;
+    height: 60px;
+    //===============BRAND===================//
+    .navbar-brand {
+      margin: auto;
+    }
+    .container {
+      display: flex;
+    }
+    //=========MENU VIEW ON ANDROID=============//
+    ul {
+      position: absolute;
+      list-style: none;
+      top: 60px;
+      left: 0;
+      width: 50%;
+      background-color: rgba(12, 12, 12, 0.651);
+      display: flex;
+      flex-direction: column;
+      transform: translateX(-300px);
+      transition: 0.5s all;
+
+      .link {
+        text-decoration: none;
+        color: white;
+        padding-left: 60px;
+        transition: 0.5s;
+      }
+
+      .active {
+        margin-top: 90px;
+      }
+      .last-menu {
+        margin-bottom: 70px;
+      }
+
+      li {
+        padding: 20px 30px;
+        margin-left: -60px;
+        margin-right: -0px;
+      }
+
+      li:hover {
+        background-color: yellowgreen;
+      }
+      li:hover .link {
+        margin-left: -15px;
+      }
+
+      //=================LOGIN BUTTON=====================//
+      .costum-btn {
+        margin-left: 20px;
+      }
+      .login {
+        position: absolute;
+        margin-top: 30px;
+        right: 80px;
+      }
+    }
+    //=============CLASS FOR VIEW MENU================//
+    .view {
+      transform: translateX(0);
+    }
+    .btn-burger {
+      display: flex;
+      cursor: pointer;
+      color: white;
+      font-size: 25px;
+    }
+    // MENU DROPDOWN=================================================================//
+    //==========================MENU DROPDOW==================================//
+    .dropdown {
+      position: relative;
+    }
+    
+    //================================= MENU DROPDOWN===========================//
+    .menu-dropdown div {
+      // visibility: hidden;
+      display: none;
+      padding: 30px 60px 10px 15px;
+      background-color: #eaeaea9a;
+      transition: left 0.5s;
+      /* https://bennettfeely.com/clippy/  */
+      /* mengubah bentuk dengan */
+      clip-path: polygon(
+        0 100%,
+        100% 100%,
+        100% 15%,
+        34% 15%,
+        23% 0,
+        17% 15%,
+        0 15%
+        );
+        transition: left 0.5s;
+      }
+      
+      .menu-dropdown:hover div {
+        // visibility: visible;
+        display: flex;
+        flex-direction: column;
+        left: 120px;
+        top: 43px;
+      }
+  }
+
+  
+  // ============================================JUMBOTRON/BANER======================================//
+  // ============================================SLIDER BANER==========================================//
+  .carousel img{
+    height:400px;
+    margin-top: 80px;
+  }
+
+  .carousel-caption{
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+  }
+
+  .carousel-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.274);
+    top: 0;
+    height: 750px;
+    width: 100%;
+  }
+
+  // ================================= MEMBER SECTION ======================================//
+  .regis-member{
+    .main{
+      display: flex;
+      justify-content: space-around;
+    }
+    .register{
+      margin-left: 0px;
+    }
+  }
+
+   //====================================PORTFOLIO===================================//
+  
+}
