@@ -8,10 +8,9 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <!-- costum css -->
-        <link rel="stylesheet" href="css/costum.css">
-        <link rel="stylesheet" href="css/costum-manipulation.css">
+        <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="costum-manipulation.css">
+        <link rel="stylesheet" href="css/utility.css">
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
@@ -21,268 +20,276 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <title>Hello, world!</title>
     </head>
-    <body class="bg-light">
+    <body>
 
     <!-- Contact Navbar -->
-    <div class="contact-nav" id="nav">
+    <div class="contact-nav pt-1" id="nav">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-lg-2 phone text-white mt-2"><i class="fas fa-phone-alt"></i><span class="ms-2">+6282293356571</span></div>
-                <div class="col-2 d-flex sosmed-img justify-content-center me-5">
-                    <a href=""><img src="img/sosmed/facebook.png" class="mt-2 me-3 rounded" alt="" width="25" height="25"></a>
-                    <a href=""><img src="img/sosmed/instagram.png" class="mt-2 me-3 rounded" alt="" width="25" height="25"></a>
-                    <a href=""><img src="img/sosmed/twitter.png" class="mt-2 rounded" alt="" width="25" height="25"></a>
-                </div>
+                <div class="col-sm-2 phone disabled text-center text-white mt-2"><a class="navbar-brand text-dark fs-2"><p>celPlate.</p></a></div>
+                <div class="col-sm-2 sosmed-img ms-2">
+                    <div class="row justify-content-center ms-2 mt-4">
+                      <div class="col-2"><a href="" class="me-3"><i class="fab fa-facebook-square fs-4 text-primary"></i></a></div>
+                      <div class="col-2"><a href="" class="me-3"><i class="fab fa-instagram-square fs-4" style="color:rgb(230, 36, 181);"></i></a></div>
+                      <div class="col-2"><a href="" class="me-3"><i class="fab fa-twitter fs-4 text-info"></i></a></div>
+                    </div>        
+                </div>          
             </div>
         </div>
     </div>
 
     <!-- navbar -->
-
-    <nav class="navbar fixed-top">
-        <div class="container">
-            <a class="navbar-brand text-white" href="#carouselExampleControls">AcelCoding</a>
-            <ul>
-                <li class="active"><a href="#nav" class="link">Home</a></li>
-                <li class="menu-dropdown">
-                    <a href="" class="link">Our Menus<i class="fas fa-angle-down ms-2"></i>
-                        <div>
-                            <a href="">drop</a>
-                            <a href="">drop</a>
-                            <a href="">drop</a>
-                        </div>
-                    </a>
-                </li>
-                <li><a href=""class="link">Contact Us</a></li>
-                <li class="menu-dropdown">
-                    <a href="" class="link">Features<i class="fas fa-angle-down ms-2"></i>
-                        <div>
-                            <a href="">drop3</a>
-                            <a href="">drop2</a>
-                            <a href="">drop1</a>
-                        </div>
-                    </a>
-                </li>
-                <li class="last-menu"><a href=""class="link">About Us</a></li>
-
-                <form action="" class="ms-5 login">
-                    <div href="" class="btn btn-danger costum-btn ps-3 pe-3">Login</div>
-                </form>
-            </ul>
-            <!-- button burger menu -->
-            <div class="btn-burger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
-
-    <!-- end navbar -->
-
-    <!-- JUMBOTRON -->
-
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active position-relative">
-                <img src="img/portfolio/5.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption text-md-center">
-                    <h1 class="display-3">Acel Coding</h1>
-                    <p class="display-6">"Makan lah sebelum Makan itu Dilarang"</p>
-                    <form action="" class="mt-5">
-                        <div href="" class="btn btn-danger costum-btn pe-4 fs-3 ps-4">Get Our Menus</div>
-                    </form>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="img/portfolio/2.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/portfolio/6.png" class="d-block w-100" alt="...">
-              </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        </div>
-
-    <!-- END JUMBOTRON -->
-
-    <!-- KONTEN -->
-    <section class="">
-        <div class="container">
-            <div class="row text-center pt-5 pb-4">
-                <div class="col">
-                    <h2>SERVICES</h2>
-                    <hr width="200" class="m-auto">
-                </div>
-            </div>
-            <div class="row text-center justify-content-evenly">
-                <div class="col-sm-3 mt-4">
-                    <i class="fas fa-shopping-basket fs-2 border border-3 p-4 rounded-circle border-dark"></i>
-                    <h5 class="mt-2 mb-3">MARKETING</h5>
-                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus repellat vitae dignissimos aliquam exercitationem voluptate.</P>
-                </div>
-                <div class="col-sm-3 mt-4">
-                    <i class="fas fa-rocket fs-2 border border-3 p-4 rounded-circle border-dark"></i>
-                    <h5 class="mt-2">DESIGN</h5>
-                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus repellat vitae dignissimos aliquam exercitationem voluptate.</P>
-                </div>
-                <div class="col-sm-3 mt-4">
-                   <div class="col">
-                    <i class="fas fa-tv fs-2 border border-3 p-4 rounded-circle border-dark"></i>
-                   </div>
-                    <h5 class="mt-2">DEVELOPMENT</h5>
-                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus repellat vitae dignissimos aliquam exercitationem voluptate.</P>
-                </div>
-            </div>
-        </div>
-    </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#a2d9ff" fill-opacity="1" d="M0,256L120,250.7C240,245,480,235,720,192C960,149,1200,75,1320,37.3L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-        </svg>
-
-    <section style="background-color: #a2d9ff;" class="regis-member">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-md text-center">
-                    <h1>Register for member</h1>
-                    <hr width="150" class="m-auto">
-                </div>
-            </div>
-            <div class="row justify-content-center main">
-                <div class="col-sm-4 img" data-aos="fade-right">
-                    <img src="undraw_mobile_payments_vftl-removebg-preview.png" alt="" width="400" height="500">
-                </div>
-                <div class="col-sm-6 register" style="margin-top: 100px;" data-aos="fade-left">
-                    <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Jadilah Member</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            With supporting text below as a natural lead-in to additional content.
-                          </p>
-                          <a href="#" class="btn btn-danger costum-btn">Register</a>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container text-white">
+          <a class="navbar-brand text-white nav-brand-animate" href="#">celPlate.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-5 ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown position-relative">
+                <a class="nav-link text-white dropdown-toggle-cstm" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown<i class="fas fa-angle-down ms-2"></i>
+                </a>
+                <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul> -->
+                <ul class="dropdown-menu-cstm">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <!-- <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-sm-2">
+                        <li><h4 class="dropdown-item text-white disabled">Title</h4></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </div>
+                      <div class="col-sm-2">
+                        <li><h4 class="dropdown-item text-white disabled">Title</h4></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </div>
+                      <div class="col-sm-2">
+                        <li><h4 class="dropdown-item text-white disabled">Title</h4></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </div>
+                      <div class="col-sm-2">
+                        <li><h4 class="dropdown-item text-white disabled">Title</h4></li>
+                        <div class="row menu-item-img">
+                          <div class="col-sm d-flex">
+                            <img src="kotapalu.jpeg" alt="" class="h-100">
+                            <img src="kotapalu.jpeg" alt="" class="h-100">
+                          </div>
                         </div>
                       </div>
-                      <div class="ms-3 mt-2" id="time-regis"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#a2d9ff" fill-opacity="1" d="M0,256L120,250.7C240,245,480,235,720,192C960,149,1200,75,1320,37.3L1440,0L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
-      </svg>
-    
-    
-    <!--END KONTEN -->
-    
-    <section class="fitures position-relative ">
-        <div class="container mb-5">
-            <h1 class="">Fitures</h1>
-        </div>
-        <div class="container d-flex justify-content-between position-relative">
-            <div class="row items d-block">
-                <div class="col-md item1">
-                    <img src="img/portfolio/2.png" class="item" alt="" width="300">
-                    <h3 class="mt-3 mb-4">Menus1 </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, cupiditate.</p>
-                </div>
-                <div class="col-md item2">
-                    <img src="img/portfolio/2.png" class="item" alt="" width="300">
-                    <h3 class="mt-3 mb-4">Menus1 </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, cupiditate.</p>
-                </div>
-                <div class="col-md item3">
-                    <img src="img/portfolio/2.png" class="item" alt="" width="300">
-                    <h3 class="mt-3 mb-4">Menus1 </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, cupiditate.</p>
-                </div>
-            </div>
-            <img src="img/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="" width="500" height="300" class="fitures-main-img">
-        </div>
-        <div class="clip"></div>
-    </section>
-
-    <!-- Our Menus -->
-
-    <section class="portfolio position-relative">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm text-center mb-5">
-                    <h1>Our Menus</h1>
-                </div>
-            </div>
-            <div class="row text-center pb-5">
-                <div class="col-lg">
-                    <img src="img/portfolio/3.png" alt="" width="500" height="300">
-                </div>
-                <div class="col-lg text-start mt-3">
-                    <h1>Menu 1</h1>
-                    <p class="fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti error nihil quisquam quis at itaque labore facilis, asperiores sint officiis!</p>
-                    <a href="" class="btn btn-outline-danger mt-4">Read More</a>
-                </div>
-            </div>
-            <div class="row text-center mt-5 pb-5 d-flex">
-                    <div class="col-lg right text-end mt-3">
-                        <h1>Menu 1</h1>
-                        <p class="fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti error nihil quisquam quis at itaque labore facilis, asperiores sint officiis!</p>
-                        <a href="" class="btn btn-outline-danger mt-4">Read More</a>
                     </div>
-                <div class="col-lg left">
-                    <img src="img/portfolio/5.png" alt="" width="500" height="300">
-                </div>
-            </div>
-            <div class="row text-center mt-5">
-                <div class="col-lg">
-                    <img src="img/portfolio/6.png" alt="" width="500" height="300">
-                </div>
-                <div class="col-lg text-start mt-3">
-                    <h1>Menu 1</h1>
-                    <p class="fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti error nihil quisquam quis at itaque labore facilis, asperiores sint officiis!</p>
-                    <a href="" class="btn btn-outline-danger mt-4">Read More</a>
-                </div>
-            </div>
+                  </div> -->
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <a href="loginsistem/login.php" class="btn btn-outline-danger bg-black">Login</a>
+            </form>
+          </div>
         </div>
-        <div class="clip-left"></div>
-    </section>
+      </nav>
+    <!-- end navbar -->
 
-    <!-- End Our Menus -->
+    
+
+    <!-- baner slider-->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slider/4.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption position-absolute text-center m-auto">
+            <h1 class="fm-viga f-shadow f-size-title">ACEL TEMPLATE</h1>
+            <h3 class="f-italic">My life is my life , and NOT your life.</h3>
+            <a class="btn btn-outline-danger" type="submit">Get Member</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider/2.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption position-absolute text-center m-auto">
+            <h1 class="fm-viga f-shadow f-size-title">ACEL TEMPLATE</h1>
+            <h3 class="f-italic">My life is my life , and NOT your life.</h3>
+            <a class="btn btn-outline-danger" type="submit">Get Member</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider/4.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption position-absolute text-center m-auto">
+            <h1 class="fm-viga f-shadow f-size-title">ACEL TEMPLATE</h1>
+            <h3 class="f-italic">My life is my life , and NOT your life.</h3>
+            <a class="btn btn-outline-danger" type="submit">Get Member</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- end baner slider-->
+
+    <!-- services -->
+    <section class="services" style="background-color:white;">
+      <div class="container pt-4">
+        <div class="row text-center mb-5">
+          <h1>Services</h1>
+        </div>
+        <div class="row text-center pb-4 justify-content-center">
+          <div class="col-lg-3 item p-4">
+            <i class="fas fa-laptop-code"></i>
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus dolor, ratione sit rem eligendi eius?
+            </p>
+            <div class="line-efect mt-5"></div>
+          </div>
+          <div class="col-lg-3 item p-4">
+            <i class="fas fa-headphones" style="font-size: 50px"></i>
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus dolor, ratione sit rem eligendi eius?
+            </p>
+            <div class="line-efect mt-5"></div>
+          </div>
+          <div class="col-lg-3 item p-4">
+            <i class="fas fa-user-cog" style="font-size: 50px"></i>
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus dolor, ratione sit rem eligendi eius?
+            </p>
+            <div class="line-efect mt-5"></div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+    
+    <!-- end services -->
+    
+    <!-- register member -->
+    <!-- end register member -->
+    
+    <!-- Register -->
+    <section class="regis">
+      <div class="container">
+        <div class="row mb-5 text-center">
+          <h1>Join Us</h1>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-sm-5 position-relative ilustratis" data-aos="fade-right" >
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="blob">
+              <path fill="#FA4D56" d="M41.4,-65.7C51.2,-66.1,55,-50,63.1,-36.3C71.3,-22.6,83.8,-11.3,83.6,-0.1C83.4,11.1,70.7,22.3,59.6,30.9C48.5,39.5,39.1,45.5,29.5,48.3C19.9,51,9.9,50.4,-0.7,51.7C-11.4,53,-22.8,56.1,-34.8,54.7C-46.7,53.3,-59.3,47.4,-62.3,37.5C-65.4,27.7,-58.9,13.8,-52.5,3.7C-46.1,-6.5,-39.9,-12.9,-36.2,-21.7C-32.5,-30.5,-31.5,-41.6,-25.9,-43.6C-20.3,-45.7,-10.1,-38.7,2.8,-43.6C15.8,-48.5,31.6,-65.4,41.4,-65.7Z" transform="translate(100 100)" />
+            </svg>
+            <img src="dokters-removebg-preview.png" class="w-100"alt="">
+          </div>
+          <div class="col-sm-5 mt-5 position-relative" data-aos="fade-left">
+            <div class="col p-4 zoom bg-light" style="z-index: 2;position: relative">
+              <h1>Join</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non doloribus ducimus dolorum dignissimos dolore dolorem earum, suscipit deleniti ipsa perspiciatis magni sint tenetur velit nulla harum vel illo adipisci esse.</p>
+            <a href="loginsistem/login.php" class="btn btn-outline-danger bg-black mt-5   w-25">visite</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Register -->
+
+    <!-- our menus -->
+    <section class="our-menus">
+      <div class="container">
+        <div class="row">
+          <h1>Our Menus</h1>
+        </div>
+        <div class="row items">
+          <div class="col-sm">
+            <img src="img/portfolio/2.png" class="w-100 img-thumbnail" alt="">
+          </div>
+          <div class="col-sm">
+            <img src="img/portfolio/2.png" class="w-100 img-thumbnail" alt="">
+          </div>
+          <div class="col-sm">
+            <img src="img/portfolio/2.png" class="w-100 img-thumbnail" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end our menus -->
+
+
 
     <!-- FOOTER -->
     <section class="footer bg-dark text-white">
-        <div class="container" style="height: 300px;">
-            <div class="row">
+        <div class="container">
+            <div class="row pt-5">
                 <!-- Address -->
-                <div class="col mt-5">
-                    <h5><i class="fas fa-map-marker-alt me-3"></i>Jln.Basuki Rahmat , Lorong Kesadran , Kota Palu</h3>
-                    <h5><i class="fas fa-envelope me-3"></i>larchelumimpah@gmail.com</h3>
-                    <h5><i class="fas fa-phone-alt me-3"></i>+6282293356571</h3>
-                    <h5><i class="fas fa-user-clock me-3"></i>Mon - Fri 8:00 AM  to 5:00 PM</h3>
+                <div class="col-sm">
+                    <p><i class="fas fa-map-marker-alt me-3"></i>Jln.Basuki Rahmat , Lorong Kesadran , Kota Palu</p>
+                    <p><i class="fas fa-envelope me-3"></i>larchelumimpah@gmail.com</p>
+                    <p><i class="fas fa-phone-alt me-3"></i>+6282293356571</p>
+                    <p><i class="fas fa-user-clock me-3"></i>Mon - Fri 8:00 AM  to 5:00 PM</p>
                 </div>
 
                 <!-- Contact Form -->
-                <div class="col text-center">
-                    <h1>Contact Me</h1>
-                    <!-- <label for="" class="form-label" name="Email">Email</label> -->
+                <div class="col-sm">
                     <div class="row">
-                        <div class="col">
-                            <input class="form-control" type="text" placeholder="Your Name" aria-label="default input example" name="name">
-                        </div>
-                        <div class="col">
-                            <input class="form-control" type="text" placeholder="Your Email" aria-label="default input example" name="email">
-                        </div>
+                        <h1>Contact Me</h1>
                     </div>
-                    <div class="col mt-3 text-start">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Masukan Pesan Anda" name="message"></textarea>
-                        <div class="btn btn-danger mt-3">KIRIM</div>
-                    </div>
+                    <form action="/contact/" method="POST">
+                        <div class="row mb-3">
+                            <div class="col-sm mb-2">
+                                <input class="form-control" type="text" placeholder="Masukan Nama" aria-label="default input example" name="name" required/>
+                            </div>
+                            <div class="col-sm">
+                                <input class="form-control" type="text" placeholder="Masukan Email" aria-label="default input example" name="email" required/>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="pesan" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="submit" class="btn btn-danger" name="submit" value="KIRIM">
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
+    <!-- END FOOTER -->
+
+    <!-- scroll up -->
+    <div class="scroll-up d-none">
+      <a href="#nav" class="btn btn-danger bg-danger"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    <!-- scroll up -->
+
 
         
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -292,9 +299,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/71bba478e7.js" crossorigin="anonymous"></script>
         <!-- Option 2: Separate Popper and Bootstrap JS -->
-        
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script> -->
+        
         <!-- Animasi -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
@@ -304,5 +311,6 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <!-- Costum -->
         <script src="js/costum.js"></script>
+        <script src="js/app_contact.js"></script>
     </body>
 </html>
